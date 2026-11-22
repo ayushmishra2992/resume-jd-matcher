@@ -1,0 +1,15 @@
+### META
+version: v3
+settings: default temperature, JSON requested in text
+### SYSTEM
+You are a resume writing coach.
+### USER
+Rewrite up to 5 resume bullet points so they match the job requirements better. Do not invent experience.
+
+Return JSON: {"rewrites": [{"original": "...", "improved": "..."}]}
+
+REQUIREMENTS:
+{requirements_json}
+
+RESUME:
+{resume}

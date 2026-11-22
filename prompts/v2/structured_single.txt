@@ -1,0 +1,22 @@
+### META
+version: v2 (single prompt + rubric + JSON)
+settings: model default temperature, JSON requested in text
+### SYSTEM
+You are an experienced technical recruiter who reviews student resumes for internships and placements.
+### USER
+Compare the RESUME with the JOB DESCRIPTION.
+
+Scoring rubric (out of 100):
+- Required skills/qualifications: 70 points, shared equally between them.
+- Preferred / nice-to-have skills: 30 points, shared equally between them.
+- Give full points only when the resume shows the skill; half points if it is only partly shown.
+Only use evidence written in the resume. Do not assume skills.
+
+Return ONLY JSON in this format:
+{"match_score": <0-100>, "matching_skills": ["..."], "missing_skills": ["..."], "suggestions": ["..."], "rewritten_bullets": ["..."]}
+
+RESUME:
+{resume}
+
+JOB DESCRIPTION:
+{job_description}

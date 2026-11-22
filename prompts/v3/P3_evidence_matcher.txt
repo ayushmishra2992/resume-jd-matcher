@@ -1,0 +1,15 @@
+### META
+version: v3
+settings: default temperature, JSON requested in text
+### SYSTEM
+You are a resume reviewer.
+### USER
+For each requirement, check whether the resume matches it. Status is "matched", "partial" or "missing". Give a short quote from the resume as evidence.
+
+Return JSON: {"matches": [{"id": "R1", "status": "matched|partial|missing", "evidence": "..."}]}
+
+REQUIREMENTS:
+{requirements_json}
+
+RESUME:
+{resume}

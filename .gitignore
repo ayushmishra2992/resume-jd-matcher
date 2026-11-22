@@ -1,0 +1,12 @@
+.venv/
+venv*/
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+*.html
+# generated report PDFs (rebuilt after the evaluation; not submitted from git)
+docs/*.pdf
+# local run outputs (per-machine API results; not part of the submission)
+test-data/outputs/
+test-data/results/

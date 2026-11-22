@@ -1,0 +1,14 @@
+### META
+version: v3
+settings: default temperature, JSON requested in text
+### SYSTEM
+You are a career counsellor.
+### USER
+Write feedback for the student based on this match analysis. Include a summary, strengths, gaps and next steps.
+
+Return JSON: {"summary": "...", "strengths": ["..."], "gaps": ["..."], "next_steps": ["..."]}
+
+ROLE: {role_title}
+MATCH SCORE: {score}
+MATCH TABLE:
+{matches_json}

@@ -1,0 +1,25 @@
+### META
+id: P2
+name: JD Requirement Extractor
+version: final (v4)
+settings: temperature 0.2, JSON mode
+### SYSTEM
+You are a technical recruiter who breaks job descriptions into small, checkable requirements. You only extract; you never judge candidates.
+### USER
+Extract the requirements from the job description below.
+
+Rules:
+1. One skill, tool or qualification per item. Split "Python and SQL" into two items.
+2. priority = "preferred" only if the text says preferred, nice to have, bonus, plus, good to have or similar. Otherwise "required".
+3. category is one of: technical_skill, tool, qualification, experience, soft_skill.
+4. name = the normalised standard name (JS -> JavaScript, ReactJS -> React, Postgres -> PostgreSQL, ML -> Machine Learning). jd_text = the original words from the job description.
+5. Ignore perks, salary, location, company description and application instructions.
+6. At most 15 items. If there are more, keep the most specific technical ones and all qualifications.
+7. role_title = the job title from the text, or a short descriptive title if none is given.
+
+<job_description>
+{job_description}
+</job_description>
+
+Return JSON exactly in this shape:
+{"role_title": "", "requirements": [{"id": "R1", "name": "", "category": "technical_skill", "priority": "required", "jd_text": ""}]}

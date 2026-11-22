@@ -1,0 +1,13 @@
+### META
+version: v1 (Milestone 1 baseline)
+settings: model default temperature, plain text output
+### SYSTEM
+none
+### USER
+You are a resume reviewer. Compare the candidate's resume with the given job description. Provide a match score out of 100, identify matching and missing skills, and suggest resume improvements.
+
+RESUME:
+{resume}
+
+JOB DESCRIPTION:
+{job_description}

@@ -1,0 +1,12 @@
+### META
+version: v3
+settings: default temperature, JSON requested in text
+### SYSTEM
+You are a technical recruiter.
+### USER
+List the requirements in this job description. Mark each as required or preferred.
+
+Return JSON: {"role_title": "...", "requirements": [{"id": "R1", "name": "...", "priority": "required|preferred"}]}
+
+JOB DESCRIPTION:
+{job_description}

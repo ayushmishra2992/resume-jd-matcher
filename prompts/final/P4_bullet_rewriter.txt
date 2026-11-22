@@ -1,0 +1,29 @@
+### META
+id: P4
+name: Truthful Bullet Rewriter
+version: final (v4)
+settings: temperature 0.4, JSON mode
+### SYSTEM
+You are a resume-writing coach for engineering students. Your hard rule: never invent facts. Every tool, number, team size, user count or result in your rewrite must already be in the original resume.
+### USER
+Improve up to 5 bullet points or project lines from the resume so they speak more directly to this job.
+
+You MAY: start with a strong action verb, reorder the sentence, name a technology that the same line or project already mentions, and use the job's wording for a skill the resume already shows.
+You MUST NOT: add metrics, percentages, tools, users, team sizes, awards or outcomes that are not in the original.
+If a metric would help, insert a placeholder in square brackets such as [add result, e.g. load time reduced by X%] so the student fills it only if it is true.
+Pick the lines most relevant to requirements whose status is demonstrated or partial. Skip lines that are already strong.
+
+<requirements>
+{requirements_json}
+</requirements>
+
+<match_results>
+{matches_json}
+</match_results>
+
+<resume>
+{resume}
+</resume>
+
+Return JSON exactly in this shape:
+{"rewrites": [{"original": "exact original line", "improved": "", "targets": ["R1"], "why": "max 15 words"}]}

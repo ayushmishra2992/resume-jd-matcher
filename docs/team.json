@@ -1,0 +1,38 @@
+{
+  "team_id": "PE-B01-23",
+  "team_name": "+one",
+  "file_team_name": "PlusOne",
+  "project_title": "Prompt-Engineered AI Resume-Job Description Matcher",
+  "short_title": "ResumeJDMatcher",
+  "batch": "B01-12",
+  "faculty": "Dr Sonal Kukreja",
+  "course": "SCSE4041 Prompt Engineering - Mini Project, Milestone 2",
+  "links": {
+    "prototype": "FILL IN - https://<your-app>.streamlit.app",
+    "repository": "FILL IN - https://github.com/<user>/resume-jd-matcher",
+    "reel": "FILL IN - Drive or unlisted YouTube link",
+    "reel_seconds": "FILL IN (90-150)"
+  },
+  "members": [
+    {
+      "name": "Ayush Mishra", "enrollment": "S24CSEU0356", "role": "Team lead, app and pipeline developer",
+      "tasks": "Built the Streamlit app (app.py), pipeline orchestration, evidence verification and rubric scoring, deployment on Streamlit Cloud",
+      "evidence": "code/app.py, code/pipeline.py, code/llm.py, Section 3", "pct": 25
+    },
+    {
+      "name": "Riya Katiyar", "enrollment": "S24CSEU0370", "role": "Prompt design (analysis prompts)",
+      "tasks": "Wrote P1 Input Guard, P2 JD Extractor and P3 Evidence Matcher; made v2-v4 of the analysis prompts and the worked example",
+      "evidence": "prompts/final/P1-P3, prompts/v2, prompts/v3, Section 2(c)", "pct": 25
+    },
+    {
+      "name": "Riya Maurya", "enrollment": "S24CSEU0347", "role": "Testing and evaluation",
+      "tasks": "Wrote the 16 test cases (normal, edge, invalid), ran the evaluation harness, filled the test table and iteration-log results",
+      "evidence": "test-data/cases.json, code/evaluate.py, test-data/results/, Section 4", "pct": 25
+    },
+    {
+      "name": "Samridhi Agrawal", "enrollment": "S24CSEU0390", "role": "Prompt design (output prompts) and documentation",
+      "tasks": "Wrote P4 Bullet Rewriter and P5 Feedback Coach, made the diagrams, the research abstract and the reel",
+      "evidence": "prompts/final/P4-P5, code/make_diagrams.py, docs/diagrams/, Section 6, reel", "pct": 25
+    }
+  ]
+}
